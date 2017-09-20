@@ -1,44 +1,86 @@
 package edu.jsu.mcis;
 
-public class TicTacToeView {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class TicTacToeView extends JPanel implements ActionListener{
 
     private TicTacToeModel model;
+	private JButton[][] board;
+	private JLabel endResult;
+	TicTacToeModel.Result result;
     
     /* CONSTRUCTOR */
     public TicTacToeView(TicTacToeModel model) {
         this.model = model;
-    }
-	
-    public void viewModel() {
-        /* Print the board to the console (see examples) */
-		System.out.println("\n  012");
+		result = TicTacToeModel.Result.NONE;
+		board = new JButton[model.getWidth()][model.getWidth()];
+		setLayout(new GridLayout(4,3));
 		for(int i = 0; i < model.getWidth(); i++){
-			System.out.print("\n" + i + " ");
 			for(int j = 0; j < model.getWidth(); j ++){
-					if(model.getMark(i,j) == TicTacToeModel.Mark.EMPTY){System.out.print("-");}
-					else{System.out.print(model.getMark(i,j));}
+				board[i][j] = new JButton();
+				board[i][j].addActionListener(this);
+				board[i][j].setName("Square" + Integer.toString(i) + Integer.toString(j));
+				board[i][j].setText("-");
+				board[i][j].setPreferredSize(new Dimension(64, 64));
+				add(board[i][j]);
 			}
 		}
-		System.out.println("\n");
+		endResult = new JLabel();
+		endResult.setName("ResultLabel");
+		add(endResult);
     }
 
     public void showNextMovePrompt() {
         /* Display a prompt for the player's next move (see examples) */
+		if(model.isXTurn()){
+			endResult.setText("Player 1 (X) Move:");
+		}
 		if(!model.isXTurn()){
-			System.out.println("\nPlayer 2 (O) Move:");
-			}
-			
-		System.out.print("Enter the row and column numbers, separated by a space: ");
+			endResult.setText("Player 2 (O) Move:");
+		}
     }
 
     public void showInputError() {
         /* Display an error if input is invalid (see examples) */
-		System.out.println("ERROR Input invalid!");
+		endResult.setText("ERROR Input invalid!");
     }
 
     public void showResult(String r) {
         /* Display final winner */
-        System.out.println(r + "!");
+		endResult.setText(r);
+		for(int i = 0; i < model.getWidth(); i++){
+			for(int j = 0; j < model.getWidth(); j ++){
+				board[i][j].setEnabled(false);
+			}
+		}
+		
     }
 	
+	public void actionPerformed(ActionEvent e){
+		for(int i = 0; i < model.getWidth(); i++){
+			for(int j = 0; j < model.getWidth(); j ++){
+				if(e.getSource().equals(board[i][j])){
+					if(model.isXTurn() == true){
+						board[i][j].setText("X");
+						model.makeMark(i,j);
+						showNextMovePrompt();
+						if(model.getResult() != TicTacToeModel.Result.NONE){
+							showResult(model.getResult().toString());
+						}
+						
+					}
+					else{
+						board[i][j].setText("O");
+						model.makeMark(i,j);
+						showNextMovePrompt();
+						if(model.getResult() != TicTacToeModel.Result.NONE){
+							showResult(model.getResult().toString());
+						}
+					}
+				}
+			}
+		}
+	}
 }

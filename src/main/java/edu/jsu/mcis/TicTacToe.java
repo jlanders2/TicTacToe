@@ -1,16 +1,15 @@
 package edu.jsu.mcis;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-public class TicTacToe {
+public class TicTacToe{
 
     private static final int DEFAULT_WIDTH = 3;
 
     public static void main(String[] args) {
-        
-        /* Set initial size of game board (default is 3x3) */
 
         int width = DEFAULT_WIDTH;
-        
-        /* If a different size is provided as a command-line argument, use it instead */
 
         if(args.length >= 1) {
             
@@ -20,27 +19,18 @@ public class TicTacToe {
             catch(NumberFormatException e) {}
             
         }
-        
-        /* Create MVC Objects */
-
+		
+		JFrame frame = new JFrame("Tic-Tac-Toe");
+		frame.setName("Tic-Tac-Toe");
+		frame.setTitle("Tic-Tac-Toe");
         TicTacToeModel model = new TicTacToeModel(width);
         TicTacToeView view = new TicTacToeView(model);
-        TicTacToeController controller = new TicTacToeController(model, view);
-        
-        /* MAIN LOOP */
-
-        while (!model.isGameover()){
-            
-            view.viewModel();
-            controller.controlModel();
-            
-        }
-        
-        /* Game is over; show the final board and the winner */
-
-        view.viewModel();
-
-        view.showResult(model.getResult().toString());
-
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.add(view);
+		frame.setSize(400,400);
+		frame.setVisible(true);
+		view.showNextMovePrompt();
+		
     }
 }

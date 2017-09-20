@@ -26,7 +26,7 @@ public class TicTacToeModel{
     public enum Result {
         X("X"), 
         O("O"), 
-        TIE("Tie"), 
+        TIE("TIE"), 
         NONE("none");
 
         private String message;
@@ -172,10 +172,13 @@ public class TicTacToeModel{
     public boolean isXTurn(){
         /* Getter for xTurn */
 		if(xTurn == true){
-			System.out.println("\nPlayer 1 (X) Move:");
+			//System.out.println("\nPlayer 1 (X) Move:");
 		}
         return xTurn;
     }
+	public void setXTurn(boolean tof){
+		xTurn = tof;
+	}
 
     public int getWidth(){
         /* Getter for width */

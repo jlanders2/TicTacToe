@@ -1,274 +1,911 @@
 ==============================================================================
-20170918 10:32:48.276 - INFO - + START SUITE: Acceptancetest [ ]
+20170920 12:01:51.370 - INFO - + START SUITE: Acceptancetest [ ]
 ==============================================================================
-20170918 10:32:48.308 - INFO - +- START SUITE: Acceptancetest.TicTacToeTests [ ]
+20170920 12:01:51.792 - INFO - +- START SUITE: Acceptancetest.TicTacToeGUITests [ ]
 ==============================================================================
-20170918 10:32:48.312 - INFO - +-- START TEST: Win Diagonally as X [ ]
+20170920 12:01:51.796 - INFO - +-- START TEST: Win Diagonally as X [ ]
 ------------------------------------------------------------------------------
-20170918 10:32:48.316 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
-20170918 10:32:48.324 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (8)
+20170920 12:01:51.800 - INFO - +--- START KW: Start New Game [ ]
+20170920 12:01:51.804 - INFO - +---- START KW: SwingLibrary.Start Application [ edu.jsu.mcis.TicTacToe ]
+20170920 12:01:51.832 - INFO - +---- END KW: SwingLibrary.Start Application (24)
+20170920 12:01:51.832 - INFO - +---- START KW: SwingLibrary.Select Window [ Tic-Tac-Toe ]
+20170920 12:01:51.876 - DEBUG - Jemmy: Start to wait frame "Frame with name or title 'Tic-Tac-Toe'" opened
+20170920 12:01:51.876 - DEBUG - Jemmy: Frame "Frame with name or title 'Tic-Tac-Toe'" has been opened in 0 milliseconds
+    javax.swing.JFrame[Tic-Tac-Toe,0,0,400x400,layout=java.awt.BorderLayout,title=Tic-Tac-Toe,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,9,38,382x353,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+20170920 12:01:51.880 - INFO - +---- END KW: SwingLibrary.Select Window (48)
+20170920 12:01:51.880 - INFO - +--- END KW: Start New Game (80)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.328 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
-20170918 10:32:48.332 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:51.880 - INFO - +--- START KW: Mark Location [ 1 | 1 ]
+20170920 12:01:51.884 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:51.888 - INFO - ${component} = Square11
+20170920 12:01:51.892 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:51.892 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:51.904 - DEBUG - Jemmy: Waiting for "Square11" subcomponent
+20170920 12:01:51.904 - DEBUG - Jemmy: Start to wait action "Wait for "Square11" subcomponent to be displayed"
+20170920 12:01:51.904 - DEBUG - Jemmy: "Wait for "Square11" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square11,127,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:51.912 - INFO - +---- END KW: SwingLibrary.Click On Component (20)
+20170920 12:01:51.916 - INFO - +--- END KW: Mark Location (36)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.332 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
-20170918 10:32:48.336 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.340 - INFO - ${m} = X
-20170918 10:32:48.340 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.340 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.344 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.348 - INFO - +--- END KW: Check Location (16)
+20170920 12:01:51.916 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20170920 12:01:51.916 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:51.920 - INFO - ${component} = Square11
+20170920 12:01:51.920 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:51.924 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:51.936 - DEBUG - Jemmy: Waiting for "Square11" subcomponent
+20170920 12:01:51.936 - DEBUG - Jemmy: Start to wait action "Wait for "Square11" subcomponent to be displayed"
+20170920 12:01:51.940 - DEBUG - Jemmy: "Wait for "Square11" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square11,127,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:51.944 - INFO - ${text} = X
+20170920 12:01:51.944 - INFO - +---- END KW: SwingLibrary.Get Button Text (20)
+20170920 12:01:51.944 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:51.948 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:51.948 - INFO - +--- END KW: Check Location (32)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.348 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 1 ]
-20170918 10:32:48.352 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:51.948 - INFO - +--- START KW: Mark Location [ 0 | 1 ]
+20170920 12:01:51.952 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:51.956 - INFO - ${component} = Square01
+20170920 12:01:51.956 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:51.956 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:51.960 - DEBUG - Jemmy: Waiting for "Square01" subcomponent
+20170920 12:01:51.960 - DEBUG - Jemmy: Start to wait action "Wait for "Square01" subcomponent to be displayed"
+20170920 12:01:51.960 - DEBUG - Jemmy: "Wait for "Square01" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square01,127,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:51.964 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:51.968 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.352 - INFO - +--- START KW: Check Location [ 0 | 1 | O ]
-20170918 10:32:48.356 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.360 - INFO - ${m} = O
-20170918 10:32:48.360 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.360 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.368 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.368 - INFO - +--- END KW: Check Location (16)
+20170920 12:01:51.968 - INFO - +--- START KW: Check Location [ 0 | 1 | O ]
+20170920 12:01:51.972 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:51.972 - INFO - ${component} = Square01
+20170920 12:01:51.976 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:51.976 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:51.980 - DEBUG - Jemmy: Waiting for "Square01" subcomponent
+20170920 12:01:51.980 - DEBUG - Jemmy: Start to wait action "Wait for "Square01" subcomponent to be displayed"
+20170920 12:01:51.980 - DEBUG - Jemmy: "Wait for "Square01" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square01,127,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:51.984 - INFO - ${text} = O
+20170920 12:01:51.984 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:51.984 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:51.988 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:51.988 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.368 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
-20170918 10:32:48.376 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:51.992 - INFO - +--- START KW: Mark Location [ 0 | 0 ]
+20170920 12:01:51.992 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:51.996 - INFO - ${component} = Square00
+20170920 12:01:51.996 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:51.996 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.000 - DEBUG - Jemmy: Waiting for "Square00" subcomponent
+20170920 12:01:52.000 - DEBUG - Jemmy: Start to wait action "Wait for "Square00" subcomponent to be displayed"
+20170920 12:01:52.000 - DEBUG - Jemmy: "Wait for "Square00" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square00,0,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.008 - INFO - +---- END KW: SwingLibrary.Click On Component (12)
+20170920 12:01:52.012 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.376 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
-20170918 10:32:48.380 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.384 - INFO - ${m} = X
-20170918 10:32:48.388 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.388 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.392 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.392 - INFO - +--- END KW: Check Location (16)
+20170920 12:01:52.012 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
+20170920 12:01:52.012 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.016 - INFO - ${component} = Square00
+20170920 12:01:52.016 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.016 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.020 - DEBUG - Jemmy: Waiting for "Square00" subcomponent
+20170920 12:01:52.020 - DEBUG - Jemmy: Start to wait action "Wait for "Square00" subcomponent to be displayed"
+20170920 12:01:52.020 - DEBUG - Jemmy: "Wait for "Square00" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square00,0,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.024 - INFO - ${text} = X
+20170920 12:01:52.024 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.028 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.028 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.032 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.396 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
-20170918 10:32:48.400 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.032 - INFO - +--- START KW: Mark Location [ 0 | 2 ]
+20170920 12:01:52.036 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.040 - INFO - ${component} = Square02
+20170920 12:01:52.044 - INFO - +---- END KW: BuiltIn.Catenate (8)
+20170920 12:01:52.044 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.048 - DEBUG - Jemmy: Waiting for "Square02" subcomponent
+20170920 12:01:52.048 - DEBUG - Jemmy: Start to wait action "Wait for "Square02" subcomponent to be displayed"
+20170920 12:01:52.048 - DEBUG - Jemmy: "Wait for "Square02" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square02,254,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.056 - INFO - +---- END KW: SwingLibrary.Click On Component (12)
+20170920 12:01:52.056 - INFO - +--- END KW: Mark Location (24)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.400 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
-20170918 10:32:48.404 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.408 - INFO - ${m} = O
-20170918 10:32:48.412 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.412 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.416 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.420 - INFO - +--- END KW: Check Location (20)
+20170920 12:01:52.056 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
+20170920 12:01:52.060 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.060 - INFO - ${component} = Square02
+20170920 12:01:52.064 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.064 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.064 - DEBUG - Jemmy: Waiting for "Square02" subcomponent
+20170920 12:01:52.064 - DEBUG - Jemmy: Start to wait action "Wait for "Square02" subcomponent to be displayed"
+20170920 12:01:52.064 - DEBUG - Jemmy: "Wait for "Square02" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square02,254,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:52.068 - INFO - ${text} = O
+20170920 12:01:52.068 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:52.068 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.072 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.076 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.420 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
-20170918 10:32:48.424 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.076 - INFO - +--- START KW: Mark Location [ 2 | 2 ]
+20170920 12:01:52.076 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.080 - INFO - ${component} = Square22
+20170920 12:01:52.084 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.084 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.084 - DEBUG - Jemmy: Waiting for "Square22" subcomponent
+20170920 12:01:52.084 - DEBUG - Jemmy: Start to wait action "Wait for "Square22" subcomponent to be displayed"
+20170920 12:01:52.088 - DEBUG - Jemmy: "Wait for "Square22" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square22,254,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.096 - INFO - +---- END KW: SwingLibrary.Click On Component (12)
+20170920 12:01:52.100 - INFO - +--- END KW: Mark Location (24)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.424 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
-20170918 10:32:48.428 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.432 - INFO - ${m} = X
-20170918 10:32:48.436 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (8)
-20170918 10:32:48.436 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.440 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.444 - INFO - +--- END KW: Check Location (16)
+20170920 12:01:52.100 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
+20170920 12:01:52.104 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.108 - INFO - ${component} = Square22
+20170920 12:01:52.108 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.108 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.112 - DEBUG - Jemmy: Waiting for "Square22" subcomponent
+20170920 12:01:52.112 - DEBUG - Jemmy: Start to wait action "Wait for "Square22" subcomponent to be displayed"
+20170920 12:01:52.112 - DEBUG - Jemmy: "Wait for "Square22" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square22,254,176,127x88,disabled,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.116 - INFO - ${text} = X
+20170920 12:01:52.116 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.116 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.120 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.120 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.444 - INFO - +--- START KW: Winner Should Be [ X ]
-20170918 10:32:48.444 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
-20170918 10:32:48.448 - INFO - ${m} = X
-20170918 10:32:48.452 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (8)
-20170918 10:32:48.452 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.456 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.456 - INFO - +--- END KW: Winner Should Be (12)
+20170920 12:01:52.124 - INFO - +--- START KW: Winner Should Be [ X ]
+20170920 12:01:52.124 - INFO - +---- START KW: SwingLibrary.Get Label Content [ ResultLabel ]
+20170920 12:01:52.132 - DEBUG - Jemmy: Waiting for "ResultLabel" subcomponent
+20170920 12:01:52.132 - DEBUG - Jemmy: Start to wait action "Wait for "ResultLabel" subcomponent to be displayed"
+20170920 12:01:52.132 - DEBUG - Jemmy: "Wait for "ResultLabel" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JLabel[ResultLabel,0,264,127x88,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=X,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+20170920 12:01:52.132 - INFO - ${text} = X
+20170920 12:01:52.136 - INFO - +---- END KW: SwingLibrary.Get Label Content (12)
+20170920 12:01:52.136 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${winner} ]
+20170920 12:01:52.136 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:52.136 - INFO - +---- START KW: SwingLibrary.Close Window [ Tic-Tac-Toe ]
+20170920 12:01:52.140 - DEBUG - Jemmy: Start to wait frame "Frame with name or title 'Tic-Tac-Toe'" opened
+20170920 12:01:52.140 - DEBUG - Jemmy: Frame "Frame with name or title 'Tic-Tac-Toe'" has been opened in 0 milliseconds
+    javax.swing.JFrame[Tic-Tac-Toe,0,0,400x400,invalid,layout=java.awt.BorderLayout,title=Tic-Tac-Toe,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,9,38,382x353,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+20170920 12:01:52.304 - INFO - +---- END KW: SwingLibrary.Close Window (164)
+20170920 12:01:52.304 - INFO - +--- END KW: Winner Should Be (184)
 ------------------------------------------------------------------------------
-20170918 10:32:48.460 - INFO - +-- END TEST: Win Diagonally as X (148)
+20170920 12:01:52.312 - INFO - +-- END TEST: Win Diagonally as X (516)
 ------------------------------------------------------------------------------
-20170918 10:32:48.464 - INFO - +-- START TEST: Win Horizontally as O [ ]
+20170920 12:01:52.316 - INFO - +-- START TEST: Win Horizontally as O [ ]
 ------------------------------------------------------------------------------
-20170918 10:32:48.464 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
-20170918 10:32:48.468 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (4)
+20170920 12:01:52.320 - INFO - +--- START KW: Start New Game [ ]
+20170920 12:01:52.324 - INFO - +---- START KW: SwingLibrary.Start Application [ edu.jsu.mcis.TicTacToe ]
+20170920 12:01:52.364 - INFO - +---- END KW: SwingLibrary.Start Application (40)
+20170920 12:01:52.368 - INFO - +---- START KW: SwingLibrary.Select Window [ Tic-Tac-Toe ]
+20170920 12:01:52.368 - DEBUG - Jemmy: Start to wait frame "Frame with name or title 'Tic-Tac-Toe'" opened
+20170920 12:01:52.372 - DEBUG - Jemmy: Frame "Frame with name or title 'Tic-Tac-Toe'" has been opened in 0 milliseconds
+    javax.swing.JFrame[Tic-Tac-Toe,0,0,400x400,layout=java.awt.BorderLayout,title=Tic-Tac-Toe,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,9,38,382x353,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+20170920 12:01:52.376 - INFO - +---- END KW: SwingLibrary.Select Window (8)
+20170920 12:01:52.376 - INFO - +--- END KW: Start New Game (56)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.468 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
-20170918 10:32:48.472 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.380 - INFO - +--- START KW: Mark Location [ 1 | 1 ]
+20170920 12:01:52.380 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.384 - INFO - ${component} = Square11
+20170920 12:01:52.388 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.388 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.392 - DEBUG - Jemmy: Waiting for "Square11" subcomponent
+20170920 12:01:52.392 - DEBUG - Jemmy: Start to wait action "Wait for "Square11" subcomponent to be displayed"
+20170920 12:01:52.392 - DEBUG - Jemmy: "Wait for "Square11" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square11,127,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.404 - INFO - +---- END KW: SwingLibrary.Click On Component (12)
+20170920 12:01:52.404 - INFO - +--- END KW: Mark Location (24)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.472 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
-20170918 10:32:48.476 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.476 - INFO - ${m} = X
-20170918 10:32:48.480 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
-20170918 10:32:48.480 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.480 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
-20170918 10:32:48.484 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.404 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20170920 12:01:52.408 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.412 - INFO - ${component} = Square11
+20170920 12:01:52.412 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.412 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.416 - DEBUG - Jemmy: Waiting for "Square11" subcomponent
+20170920 12:01:52.416 - DEBUG - Jemmy: Start to wait action "Wait for "Square11" subcomponent to be displayed"
+20170920 12:01:52.416 - DEBUG - Jemmy: "Wait for "Square11" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square11,127,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.420 - INFO - ${text} = X
+20170920 12:01:52.420 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.420 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.424 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.428 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.484 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 0 ]
-20170918 10:32:48.484 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+20170920 12:01:52.428 - INFO - +--- START KW: Mark Location [ 2 | 0 ]
+20170920 12:01:52.428 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.432 - INFO - ${component} = Square20
+20170920 12:01:52.432 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.432 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.432 - DEBUG - Jemmy: Waiting for "Square20" subcomponent
+20170920 12:01:52.436 - DEBUG - Jemmy: Start to wait action "Wait for "Square20" subcomponent to be displayed"
+20170920 12:01:52.436 - DEBUG - Jemmy: "Wait for "Square20" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square20,0,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.444 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:52.444 - INFO - +--- END KW: Mark Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.488 - INFO - +--- START KW: Check Location [ 2 | 0 | O ]
-20170918 10:32:48.488 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.492 - INFO - ${m} = O
-20170918 10:32:48.492 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.492 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.496 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.496 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.444 - INFO - +--- START KW: Check Location [ 2 | 0 | O ]
+20170920 12:01:52.448 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.448 - INFO - ${component} = Square20
+20170920 12:01:52.448 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:52.448 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.452 - DEBUG - Jemmy: Waiting for "Square20" subcomponent
+20170920 12:01:52.452 - DEBUG - Jemmy: Start to wait action "Wait for "Square20" subcomponent to be displayed"
+20170920 12:01:52.456 - DEBUG - Jemmy: "Wait for "Square20" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square20,0,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:52.456 - INFO - ${text} = O
+20170920 12:01:52.456 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.456 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.460 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.464 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.496 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
-20170918 10:32:48.500 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.464 - INFO - +--- START KW: Mark Location [ 0 | 0 ]
+20170920 12:01:52.464 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.468 - INFO - ${component} = Square00
+20170920 12:01:52.472 - INFO - +---- END KW: BuiltIn.Catenate (8)
+20170920 12:01:52.472 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.476 - DEBUG - Jemmy: Waiting for "Square00" subcomponent
+20170920 12:01:52.476 - DEBUG - Jemmy: Start to wait action "Wait for "Square00" subcomponent to be displayed"
+20170920 12:01:52.476 - DEBUG - Jemmy: "Wait for "Square00" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square00,0,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.480 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:52.484 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.500 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
-20170918 10:32:48.504 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.508 - INFO - ${m} = X
-20170918 10:32:48.508 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.508 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.512 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.512 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.484 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
+20170920 12:01:52.488 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.492 - INFO - ${component} = Square00
+20170920 12:01:52.492 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.492 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.492 - DEBUG - Jemmy: Waiting for "Square00" subcomponent
+20170920 12:01:52.496 - DEBUG - Jemmy: Start to wait action "Wait for "Square00" subcomponent to be displayed"
+20170920 12:01:52.496 - DEBUG - Jemmy: "Wait for "Square00" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square00,0,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.496 - INFO - ${text} = X
+20170920 12:01:52.500 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:52.500 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.504 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.504 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.516 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
-20170918 10:32:48.516 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.504 - INFO - +--- START KW: Mark Location [ 2 | 2 ]
+20170920 12:01:52.508 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.512 - INFO - ${component} = Square22
+20170920 12:01:52.512 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.512 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.516 - DEBUG - Jemmy: Waiting for "Square22" subcomponent
+20170920 12:01:52.516 - DEBUG - Jemmy: Start to wait action "Wait for "Square22" subcomponent to be displayed"
+20170920 12:01:52.516 - DEBUG - Jemmy: "Wait for "Square22" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square22,254,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.524 - INFO - +---- END KW: SwingLibrary.Click On Component (12)
+20170920 12:01:52.524 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.520 - INFO - +--- START KW: Check Location [ 2 | 2 | O ]
-20170918 10:32:48.520 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.524 - INFO - ${m} = O
-20170918 10:32:48.524 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.524 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.528 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.528 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.524 - INFO - +--- START KW: Check Location [ 2 | 2 | O ]
+20170920 12:01:52.528 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.528 - INFO - ${component} = Square22
+20170920 12:01:52.528 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:52.532 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.532 - DEBUG - Jemmy: Waiting for "Square22" subcomponent
+20170920 12:01:52.532 - DEBUG - Jemmy: Start to wait action "Wait for "Square22" subcomponent to be displayed"
+20170920 12:01:52.536 - DEBUG - Jemmy: "Wait for "Square22" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square22,254,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:52.536 - INFO - ${text} = O
+20170920 12:01:52.540 - INFO - +---- END KW: SwingLibrary.Get Button Text (12)
+20170920 12:01:52.540 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.544 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:52.544 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.532 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
-20170918 10:32:48.532 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+20170920 12:01:52.544 - INFO - +--- START KW: Mark Location [ 0 | 2 ]
+20170920 12:01:52.548 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.548 - INFO - ${component} = Square02
+20170920 12:01:52.552 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.552 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.556 - DEBUG - Jemmy: Waiting for "Square02" subcomponent
+20170920 12:01:52.556 - DEBUG - Jemmy: Start to wait action "Wait for "Square02" subcomponent to be displayed"
+20170920 12:01:52.556 - DEBUG - Jemmy: "Wait for "Square02" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square02,254,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.564 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:52.564 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.536 - INFO - +--- START KW: Check Location [ 0 | 2 | X ]
-20170918 10:32:48.540 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.544 - INFO - ${m} = X
-20170918 10:32:48.544 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.544 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.548 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.552 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.564 - INFO - +--- START KW: Check Location [ 0 | 2 | X ]
+20170920 12:01:52.568 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.572 - INFO - ${component} = Square02
+20170920 12:01:52.572 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.572 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.576 - DEBUG - Jemmy: Waiting for "Square02" subcomponent
+20170920 12:01:52.576 - DEBUG - Jemmy: Start to wait action "Wait for "Square02" subcomponent to be displayed"
+20170920 12:01:52.576 - DEBUG - Jemmy: "Wait for "Square02" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square02,254,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.580 - INFO - ${text} = X
+20170920 12:01:52.580 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.580 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.584 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.584 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.552 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 1 ]
-20170918 10:32:48.556 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.584 - INFO - +--- START KW: Mark Location [ 2 | 1 ]
+20170920 12:01:52.588 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.588 - INFO - ${component} = Square21
+20170920 12:01:52.588 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:52.588 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.592 - DEBUG - Jemmy: Waiting for "Square21" subcomponent
+20170920 12:01:52.592 - DEBUG - Jemmy: Start to wait action "Wait for "Square21" subcomponent to be displayed"
+20170920 12:01:52.592 - DEBUG - Jemmy: "Wait for "Square21" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square21,127,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.600 - INFO - +---- END KW: SwingLibrary.Click On Component (12)
+20170920 12:01:52.604 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.560 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
-20170918 10:32:48.560 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.564 - INFO - ${m} = O
-20170918 10:32:48.564 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.564 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.568 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.568 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.604 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
+20170920 12:01:52.604 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.608 - INFO - ${component} = Square21
+20170920 12:01:52.608 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.608 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.612 - DEBUG - Jemmy: Waiting for "Square21" subcomponent
+20170920 12:01:52.612 - DEBUG - Jemmy: Start to wait action "Wait for "Square21" subcomponent to be displayed"
+20170920 12:01:52.616 - DEBUG - Jemmy: "Wait for "Square21" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square21,127,176,127x88,disabled,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:52.616 - INFO - ${text} = O
+20170920 12:01:52.616 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.620 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.624 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:52.624 - INFO - +--- END KW: Check Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.568 - INFO - +--- START KW: Winner Should Be [ O ]
-20170918 10:32:48.572 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
-20170918 10:32:48.572 - INFO - ${m} = O
-20170918 10:32:48.572 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (0)
-20170918 10:32:48.576 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.576 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
-20170918 10:32:48.580 - INFO - +--- END KW: Winner Should Be (8)
+20170920 12:01:52.624 - INFO - +--- START KW: Winner Should Be [ O ]
+20170920 12:01:52.628 - INFO - +---- START KW: SwingLibrary.Get Label Content [ ResultLabel ]
+20170920 12:01:52.628 - DEBUG - Jemmy: Waiting for "ResultLabel" subcomponent
+20170920 12:01:52.628 - DEBUG - Jemmy: Start to wait action "Wait for "ResultLabel" subcomponent to be displayed"
+20170920 12:01:52.628 - DEBUG - Jemmy: "Wait for "ResultLabel" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JLabel[ResultLabel,0,264,127x88,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=O,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+20170920 12:01:52.632 - INFO - ${text} = O
+20170920 12:01:52.632 - INFO - +---- END KW: SwingLibrary.Get Label Content (4)
+20170920 12:01:52.632 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${winner} ]
+20170920 12:01:52.636 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.636 - INFO - +---- START KW: SwingLibrary.Close Window [ Tic-Tac-Toe ]
+20170920 12:01:52.640 - DEBUG - Jemmy: Start to wait frame "Frame with name or title 'Tic-Tac-Toe'" opened
+20170920 12:01:52.640 - DEBUG - Jemmy: Frame "Frame with name or title 'Tic-Tac-Toe'" has been opened in 0 milliseconds
+    javax.swing.JFrame[Tic-Tac-Toe,0,0,400x400,invalid,layout=java.awt.BorderLayout,title=Tic-Tac-Toe,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,9,38,382x353,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+20170920 12:01:52.796 - INFO - +---- END KW: SwingLibrary.Close Window (160)
+20170920 12:01:52.796 - INFO - +--- END KW: Winner Should Be (172)
 ------------------------------------------------------------------------------
-20170918 10:32:48.580 - INFO - +-- END TEST: Win Horizontally as O (120)
+20170920 12:01:52.800 - INFO - +-- END TEST: Win Horizontally as O (484)
 ------------------------------------------------------------------------------
-20170918 10:32:48.580 - INFO - +-- START TEST: Force a Tie [ ]
+20170920 12:01:52.800 - INFO - +-- START TEST: Force a Tie [ ]
 ------------------------------------------------------------------------------
-20170918 10:32:48.584 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
-20170918 10:32:48.584 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (0)
+20170920 12:01:52.800 - INFO - +--- START KW: Start New Game [ ]
+20170920 12:01:52.804 - INFO - +---- START KW: SwingLibrary.Start Application [ edu.jsu.mcis.TicTacToe ]
+20170920 12:01:52.840 - INFO - +---- END KW: SwingLibrary.Start Application (36)
+20170920 12:01:52.844 - INFO - +---- START KW: SwingLibrary.Select Window [ Tic-Tac-Toe ]
+20170920 12:01:52.844 - DEBUG - Jemmy: Start to wait frame "Frame with name or title 'Tic-Tac-Toe'" opened
+20170920 12:01:52.848 - DEBUG - Jemmy: Frame "Frame with name or title 'Tic-Tac-Toe'" has been opened in 0 milliseconds
+    javax.swing.JFrame[Tic-Tac-Toe,0,0,400x400,layout=java.awt.BorderLayout,title=Tic-Tac-Toe,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,9,38,382x353,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+20170920 12:01:52.852 - INFO - +---- END KW: SwingLibrary.Select Window (8)
+20170920 12:01:52.884 - INFO - +--- END KW: Start New Game (52)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.588 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
-20170918 10:32:48.588 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+20170920 12:01:52.888 - INFO - +--- START KW: Mark Location [ 1 | 1 ]
+20170920 12:01:52.896 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.900 - INFO - ${component} = Square11
+20170920 12:01:52.900 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.900 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.900 - DEBUG - Jemmy: Waiting for "Square11" subcomponent
+20170920 12:01:52.900 - DEBUG - Jemmy: Start to wait action "Wait for "Square11" subcomponent to be displayed"
+20170920 12:01:52.900 - DEBUG - Jemmy: "Wait for "Square11" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square11,127,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.908 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:52.912 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.588 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
-20170918 10:32:48.592 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.596 - INFO - ${m} = X
-20170918 10:32:48.596 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.596 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.600 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.600 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.912 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20170920 12:01:52.912 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.916 - INFO - ${component} = Square11
+20170920 12:01:52.916 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.916 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.920 - DEBUG - Jemmy: Waiting for "Square11" subcomponent
+20170920 12:01:52.920 - DEBUG - Jemmy: Start to wait action "Wait for "Square11" subcomponent to be displayed"
+20170920 12:01:52.920 - DEBUG - Jemmy: "Wait for "Square11" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square11,127,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.924 - INFO - ${text} = X
+20170920 12:01:52.924 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:52.924 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.928 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.928 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.600 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
-20170918 10:32:48.604 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.928 - INFO - +--- START KW: Mark Location [ 0 | 0 ]
+20170920 12:01:52.932 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.932 - INFO - ${component} = Square00
+20170920 12:01:52.932 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:52.932 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.936 - DEBUG - Jemmy: Waiting for "Square00" subcomponent
+20170920 12:01:52.936 - DEBUG - Jemmy: Start to wait action "Wait for "Square00" subcomponent to be displayed"
+20170920 12:01:52.936 - DEBUG - Jemmy: "Wait for "Square00" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square00,0,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.944 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:52.944 - INFO - +--- END KW: Mark Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.604 - INFO - +--- START KW: Check Location [ 0 | 0 | O ]
-20170918 10:32:48.604 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.608 - INFO - ${m} = O
-20170918 10:32:48.608 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.612 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.616 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
-20170918 10:32:48.616 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:52.944 - INFO - +--- START KW: Check Location [ 0 | 0 | O ]
+20170920 12:01:52.948 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.948 - INFO - ${component} = Square00
+20170920 12:01:52.952 - INFO - +---- END KW: BuiltIn.Catenate (8)
+20170920 12:01:52.952 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.952 - DEBUG - Jemmy: Waiting for "Square00" subcomponent
+20170920 12:01:52.956 - DEBUG - Jemmy: Start to wait action "Wait for "Square00" subcomponent to be displayed"
+20170920 12:01:52.956 - DEBUG - Jemmy: "Wait for "Square00" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square00,0,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:52.956 - INFO - ${text} = O
+20170920 12:01:52.956 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:52.956 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.960 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:52.960 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.616 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 0 ]
-20170918 10:32:48.620 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.960 - INFO - +--- START KW: Mark Location [ 2 | 0 ]
+20170920 12:01:52.964 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.968 - INFO - ${component} = Square20
+20170920 12:01:52.972 - INFO - +---- END KW: BuiltIn.Catenate (8)
+20170920 12:01:52.972 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:52.972 - DEBUG - Jemmy: Waiting for "Square20" subcomponent
+20170920 12:01:52.976 - DEBUG - Jemmy: Start to wait action "Wait for "Square20" subcomponent to be displayed"
+20170920 12:01:52.976 - DEBUG - Jemmy: "Wait for "Square20" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square20,0,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:52.980 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:52.980 - INFO - +--- END KW: Mark Location (20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.620 - INFO - +--- START KW: Check Location [ 2 | 0 | X ]
-20170918 10:32:48.624 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.628 - INFO - ${m} = X
-20170918 10:32:48.628 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.628 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.632 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.636 - INFO - +--- END KW: Check Location (16)
+20170920 12:01:52.984 - INFO - +--- START KW: Check Location [ 2 | 0 | X ]
+20170920 12:01:52.984 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:52.988 - INFO - ${component} = Square20
+20170920 12:01:52.988 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:52.988 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:52.988 - DEBUG - Jemmy: Waiting for "Square20" subcomponent
+20170920 12:01:52.988 - DEBUG - Jemmy: Start to wait action "Wait for "Square20" subcomponent to be displayed"
+20170920 12:01:52.992 - DEBUG - Jemmy: "Wait for "Square20" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square20,0,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:52.992 - INFO - ${text} = X
+20170920 12:01:52.996 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:52.996 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:52.996 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:52.996 - INFO - +--- END KW: Check Location (12)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.636 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
-20170918 10:32:48.640 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:52.996 - INFO - +--- START KW: Mark Location [ 0 | 2 ]
+20170920 12:01:53.000 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.000 - INFO - ${component} = Square02
+20170920 12:01:53.004 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:53.004 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:53.004 - DEBUG - Jemmy: Waiting for "Square02" subcomponent
+20170920 12:01:53.004 - DEBUG - Jemmy: Start to wait action "Wait for "Square02" subcomponent to be displayed"
+20170920 12:01:53.004 - DEBUG - Jemmy: "Wait for "Square02" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square02,254,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:53.012 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:53.012 - INFO - +--- END KW: Mark Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.640 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
-20170918 10:32:48.644 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.648 - INFO - ${m} = O
-20170918 10:32:48.648 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.648 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.652 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.652 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:53.012 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
+20170920 12:01:53.016 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.016 - INFO - ${component} = Square02
+20170920 12:01:53.016 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.016 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:53.020 - DEBUG - Jemmy: Waiting for "Square02" subcomponent
+20170920 12:01:53.020 - DEBUG - Jemmy: Start to wait action "Wait for "Square02" subcomponent to be displayed"
+20170920 12:01:53.020 - DEBUG - Jemmy: "Wait for "Square02" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square02,254,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:53.024 - INFO - ${text} = O
+20170920 12:01:53.024 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:53.024 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:53.028 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.028 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.656 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 1 ]
-20170918 10:32:48.660 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:53.028 - INFO - +--- START KW: Mark Location [ 0 | 1 ]
+20170920 12:01:53.032 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.032 - INFO - ${component} = Square01
+20170920 12:01:53.036 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.036 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:53.036 - DEBUG - Jemmy: Waiting for "Square01" subcomponent
+20170920 12:01:53.036 - DEBUG - Jemmy: Start to wait action "Wait for "Square01" subcomponent to be displayed"
+20170920 12:01:53.036 - DEBUG - Jemmy: "Wait for "Square01" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square01,127,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:53.044 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:53.044 - INFO - +--- END KW: Mark Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.660 - INFO - +--- START KW: Check Location [ 0 | 1 | X ]
-20170918 10:32:48.664 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.664 - INFO - ${m} = X
-20170918 10:32:48.668 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
-20170918 10:32:48.668 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.668 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
-20170918 10:32:48.672 - INFO - +--- END KW: Check Location (8)
+20170920 12:01:53.044 - INFO - +--- START KW: Check Location [ 0 | 1 | X ]
+20170920 12:01:53.048 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.048 - INFO - ${component} = Square01
+20170920 12:01:53.048 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:53.048 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:53.052 - DEBUG - Jemmy: Waiting for "Square01" subcomponent
+20170920 12:01:53.052 - DEBUG - Jemmy: Start to wait action "Wait for "Square01" subcomponent to be displayed"
+20170920 12:01:53.052 - DEBUG - Jemmy: "Wait for "Square01" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square01,127,0,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:53.056 - INFO - ${text} = X
+20170920 12:01:53.056 - INFO - +---- END KW: SwingLibrary.Get Button Text (8)
+20170920 12:01:53.056 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:53.056 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.060 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.672 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 1 ]
-20170918 10:32:48.672 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+20170920 12:01:53.060 - INFO - +--- START KW: Mark Location [ 2 | 1 ]
+20170920 12:01:53.060 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.064 - INFO - ${component} = Square21
+20170920 12:01:53.064 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.064 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:53.064 - DEBUG - Jemmy: Waiting for "Square21" subcomponent
+20170920 12:01:53.064 - DEBUG - Jemmy: Start to wait action "Wait for "Square21" subcomponent to be displayed"
+20170920 12:01:53.068 - DEBUG - Jemmy: "Wait for "Square21" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square21,127,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:53.072 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:53.072 - INFO - +--- END KW: Mark Location (12)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.676 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
-20170918 10:32:48.676 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.680 - INFO - ${m} = O
-20170918 10:32:48.680 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.680 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.684 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.684 - INFO - +--- END KW: Check Location (8)
+20170920 12:01:53.076 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
+20170920 12:01:53.076 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.080 - INFO - ${component} = Square21
+20170920 12:01:53.080 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.080 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:53.080 - DEBUG - Jemmy: Waiting for "Square21" subcomponent
+20170920 12:01:53.080 - DEBUG - Jemmy: Start to wait action "Wait for "Square21" subcomponent to be displayed"
+20170920 12:01:53.084 - DEBUG - Jemmy: "Wait for "Square21" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square21,127,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:53.084 - INFO - ${text} = O
+20170920 12:01:53.088 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:53.088 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:53.088 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.088 - INFO - +--- END KW: Check Location (12)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.684 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 2 ]
-20170918 10:32:48.688 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:53.088 - INFO - +--- START KW: Mark Location [ 1 | 2 ]
+20170920 12:01:53.092 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.092 - INFO - ${component} = Square12
+20170920 12:01:53.092 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:53.096 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:53.096 - DEBUG - Jemmy: Waiting for "Square12" subcomponent
+20170920 12:01:53.096 - DEBUG - Jemmy: Start to wait action "Wait for "Square12" subcomponent to be displayed"
+20170920 12:01:53.096 - DEBUG - Jemmy: "Wait for "Square12" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square12,254,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:53.104 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:53.104 - INFO - +--- END KW: Mark Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.688 - INFO - +--- START KW: Check Location [ 1 | 2 | X ]
-20170918 10:32:48.692 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.692 - INFO - ${m} = X
-20170918 10:32:48.692 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
-20170918 10:32:48.692 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.696 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.696 - INFO - +--- END KW: Check Location (8)
+20170920 12:01:53.108 - INFO - +--- START KW: Check Location [ 1 | 2 | X ]
+20170920 12:01:53.108 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.112 - INFO - ${component} = Square12
+20170920 12:01:53.112 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.112 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:53.112 - DEBUG - Jemmy: Waiting for "Square12" subcomponent
+20170920 12:01:53.112 - DEBUG - Jemmy: Start to wait action "Wait for "Square12" subcomponent to be displayed"
+20170920 12:01:53.116 - DEBUG - Jemmy: "Wait for "Square12" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square12,254,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:53.116 - INFO - ${text} = X
+20170920 12:01:53.116 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:53.120 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:53.120 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.120 - INFO - +--- END KW: Check Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.696 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 0 ]
-20170918 10:32:48.700 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+20170920 12:01:53.120 - INFO - +--- START KW: Mark Location [ 1 | 0 ]
+20170920 12:01:53.124 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.124 - INFO - ${component} = Square10
+20170920 12:01:53.124 - INFO - +---- END KW: BuiltIn.Catenate (0)
+20170920 12:01:53.128 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:53.128 - DEBUG - Jemmy: Waiting for "Square10" subcomponent
+20170920 12:01:53.128 - DEBUG - Jemmy: Start to wait action "Wait for "Square10" subcomponent to be displayed"
+20170920 12:01:53.128 - DEBUG - Jemmy: "Wait for "Square10" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square10,0,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:53.132 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:53.136 - INFO - +--- END KW: Mark Location (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.700 - INFO - +--- START KW: Check Location [ 1 | 0 | O ]
-20170918 10:32:48.704 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.708 - INFO - ${m} = O
-20170918 10:32:48.708 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.708 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.712 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.716 - INFO - +--- END KW: Check Location (16)
+20170920 12:01:53.136 - INFO - +--- START KW: Check Location [ 1 | 0 | O ]
+20170920 12:01:53.136 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.140 - INFO - ${component} = Square10
+20170920 12:01:53.140 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.140 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:53.144 - DEBUG - Jemmy: Waiting for "Square10" subcomponent
+20170920 12:01:53.144 - DEBUG - Jemmy: Start to wait action "Wait for "Square10" subcomponent to be displayed"
+20170920 12:01:53.144 - DEBUG - Jemmy: "Wait for "Square10" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square10,0,88,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=O,defaultCapable=true]
+20170920 12:01:53.144 - INFO - ${text} = O
+20170920 12:01:53.144 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:53.144 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:53.148 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.148 - INFO - +--- END KW: Check Location (12)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.716 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
-20170918 10:32:48.716 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+20170920 12:01:53.148 - INFO - +--- START KW: Mark Location [ 2 | 2 ]
+20170920 12:01:53.148 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.152 - INFO - ${component} = Square22
+20170920 12:01:53.152 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.152 - INFO - +---- START KW: SwingLibrary.Click On Component [ ${component} ]
+20170920 12:01:53.152 - DEBUG - Jemmy: Waiting for "Square22" subcomponent
+20170920 12:01:53.152 - DEBUG - Jemmy: Start to wait action "Wait for "Square22" subcomponent to be displayed"
+20170920 12:01:53.152 - DEBUG - Jemmy: "Wait for "Square22" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JButton[Square22,254,176,127x88,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=-,defaultCapable=true]
+20170920 12:01:53.160 - INFO - +---- END KW: SwingLibrary.Click On Component (8)
+20170920 12:01:53.160 - INFO - +--- END KW: Mark Location (12)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.716 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
-20170918 10:32:48.720 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
-20170918 10:32:48.724 - INFO - ${m} = X
-20170918 10:32:48.724 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
-20170918 10:32:48.724 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.728 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.728 - INFO - +--- END KW: Check Location (12)
+20170920 12:01:53.160 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
+20170920 12:01:53.160 - INFO - +---- START KW: BuiltIn.Catenate [ SEPARATOR= | Square | ${row} | ${col} ]
+20170920 12:01:53.164 - INFO - ${component} = Square22
+20170920 12:01:53.164 - INFO - +---- END KW: BuiltIn.Catenate (4)
+20170920 12:01:53.164 - INFO - +---- START KW: SwingLibrary.Get Button Text [ ${component} ]
+20170920 12:01:53.164 - DEBUG - Jemmy: Waiting for "Square22" subcomponent
+20170920 12:01:53.164 - DEBUG - Jemmy: Start to wait action "Wait for "Square22" subcomponent to be displayed"
+20170920 12:01:53.168 - DEBUG - Jemmy: "Wait for "Square22" subcomponent to be displayed" action has been produced in 4 milliseconds with result 
+    : javax.swing.JButton[Square22,254,176,127x88,disabled,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@17646984,flags=296,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=64,height=64],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=X,defaultCapable=true]
+20170920 12:01:53.168 - INFO - ${text} = X
+20170920 12:01:53.168 - INFO - +---- END KW: SwingLibrary.Get Button Text (4)
+20170920 12:01:53.172 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${mark} ]
+20170920 12:01:53.172 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.172 - INFO - +--- END KW: Check Location (12)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170918 10:32:48.728 - INFO - +--- START KW: Winner Should Be [ TIE ]
-20170918 10:32:48.732 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
-20170918 10:32:48.732 - INFO - ${m} = TIE
-20170918 10:32:48.732 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (0)
-20170918 10:32:48.732 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
-20170918 10:32:48.736 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
-20170918 10:32:48.736 - INFO - +--- END KW: Winner Should Be (8)
+20170920 12:01:53.172 - INFO - +--- START KW: Winner Should Be [ TIE ]
+20170920 12:01:53.172 - INFO - +---- START KW: SwingLibrary.Get Label Content [ ResultLabel ]
+20170920 12:01:53.176 - DEBUG - Jemmy: Waiting for "ResultLabel" subcomponent
+20170920 12:01:53.176 - DEBUG - Jemmy: Start to wait action "Wait for "ResultLabel" subcomponent to be displayed"
+20170920 12:01:53.176 - DEBUG - Jemmy: "Wait for "ResultLabel" subcomponent to be displayed" action has been produced in 0 milliseconds with result 
+    : javax.swing.JLabel[ResultLabel,0,264,127x88,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=TIE,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+20170920 12:01:53.176 - INFO - ${text} = TIE
+20170920 12:01:53.176 - INFO - +---- END KW: SwingLibrary.Get Label Content (4)
+20170920 12:01:53.176 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${text} | ${winner} ]
+20170920 12:01:53.180 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.180 - INFO - +---- START KW: SwingLibrary.Close Window [ Tic-Tac-Toe ]
+20170920 12:01:53.180 - DEBUG - Jemmy: Start to wait frame "Frame with name or title 'Tic-Tac-Toe'" opened
+20170920 12:01:53.180 - DEBUG - Jemmy: Frame "Frame with name or title 'Tic-Tac-Toe'" has been opened in 0 milliseconds
+    javax.swing.JFrame[Tic-Tac-Toe,0,0,400x400,invalid,layout=java.awt.BorderLayout,title=Tic-Tac-Toe,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,9,38,382x353,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+20170920 12:01:53.340 - INFO - +---- END KW: SwingLibrary.Close Window (156)
+20170920 12:01:53.340 - INFO - +--- END KW: Winner Should Be (168)
 ------------------------------------------------------------------------------
-20170918 10:32:48.740 - INFO - +-- END TEST: Force a Tie (156)
+20170920 12:01:53.344 - INFO - +-- END TEST: Force a Tie (540)
 ------------------------------------------------------------------------------
-20170918 10:32:48.744 - INFO - +- END SUITE: Acceptancetest.TicTacToeTests (464)
+20170920 12:01:53.372 - INFO - +- END SUITE: Acceptancetest.TicTacToeGUITests (1982)
 ==============================================================================
-20170918 10:32:48.744 - INFO - + END SUITE: Acceptancetest (640)
+20170920 12:01:53.444 - INFO - +- START SUITE: Acceptancetest.TicTacToeTests [ ]
+==============================================================================
+20170920 12:01:53.448 - INFO - +-- START TEST: Win Diagonally as X [ ]
+------------------------------------------------------------------------------
+20170920 12:01:53.448 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
+20170920 12:01:53.452 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.452 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
+20170920 12:01:53.456 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.456 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20170920 12:01:53.456 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.460 - INFO - ${m} = X
+20170920 12:01:53.460 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.460 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.464 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.464 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.464 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 1 ]
+20170920 12:01:53.464 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.468 - INFO - +--- START KW: Check Location [ 0 | 1 | O ]
+20170920 12:01:53.468 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.468 - INFO - ${m} = O
+20170920 12:01:53.472 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.472 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.472 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.472 - INFO - +--- END KW: Check Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.472 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
+20170920 12:01:53.476 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.476 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
+20170920 12:01:53.476 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.480 - INFO - ${m} = X
+20170920 12:01:53.480 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.480 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.484 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.484 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.484 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
+20170920 12:01:53.484 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.484 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
+20170920 12:01:53.488 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.488 - INFO - ${m} = O
+20170920 12:01:53.488 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.492 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.492 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.496 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.496 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
+20170920 12:01:53.496 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.496 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
+20170920 12:01:53.500 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.504 - INFO - ${m} = X
+20170920 12:01:53.504 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.504 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.508 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.508 - INFO - +--- END KW: Check Location (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.508 - INFO - +--- START KW: Winner Should Be [ X ]
+20170920 12:01:53.512 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
+20170920 12:01:53.512 - INFO - ${m} = X
+20170920 12:01:53.512 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (0)
+20170920 12:01:53.512 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.516 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.516 - INFO - +--- END KW: Winner Should Be (8)
+------------------------------------------------------------------------------
+20170920 12:01:53.520 - INFO - +-- END TEST: Win Diagonally as X (72)
+------------------------------------------------------------------------------
+20170920 12:01:53.520 - INFO - +-- START TEST: Win Horizontally as O [ ]
+------------------------------------------------------------------------------
+20170920 12:01:53.520 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
+20170920 12:01:53.524 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.524 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
+20170920 12:01:53.524 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.524 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20170920 12:01:53.528 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.528 - INFO - ${m} = X
+20170920 12:01:53.528 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.528 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.532 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.532 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.532 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 0 ]
+20170920 12:01:53.536 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.536 - INFO - +--- START KW: Check Location [ 2 | 0 | O ]
+20170920 12:01:53.536 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.536 - INFO - ${m} = O
+20170920 12:01:53.536 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.540 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.540 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.540 - INFO - +--- END KW: Check Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.540 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
+20170920 12:01:53.544 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.544 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
+20170920 12:01:53.544 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.548 - INFO - ${m} = X
+20170920 12:01:53.548 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.548 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.552 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.552 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.552 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
+20170920 12:01:53.552 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.556 - INFO - +--- START KW: Check Location [ 2 | 2 | O ]
+20170920 12:01:53.556 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.556 - INFO - ${m} = O
+20170920 12:01:53.560 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.560 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.560 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.560 - INFO - +--- END KW: Check Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.560 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
+20170920 12:01:53.564 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.564 - INFO - +--- START KW: Check Location [ 0 | 2 | X ]
+20170920 12:01:53.564 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.568 - INFO - ${m} = X
+20170920 12:01:53.568 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.568 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.568 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.572 - INFO - +--- END KW: Check Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.572 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 1 ]
+20170920 12:01:53.572 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.572 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
+20170920 12:01:53.572 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.576 - INFO - ${m} = O
+20170920 12:01:53.576 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.576 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.580 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.580 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.580 - INFO - +--- START KW: Winner Should Be [ O ]
+20170920 12:01:53.584 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
+20170920 12:01:53.584 - INFO - ${m} = O
+20170920 12:01:53.588 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (4)
+20170920 12:01:53.588 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.588 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.592 - INFO - +--- END KW: Winner Should Be (12)
+------------------------------------------------------------------------------
+20170920 12:01:53.592 - INFO - +-- END TEST: Win Horizontally as O (72)
+------------------------------------------------------------------------------
+20170920 12:01:53.592 - INFO - +-- START TEST: Force a Tie [ ]
+------------------------------------------------------------------------------
+20170920 12:01:53.596 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
+20170920 12:01:53.596 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.596 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
+20170920 12:01:53.600 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.600 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20170920 12:01:53.600 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.604 - INFO - ${m} = X
+20170920 12:01:53.604 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.604 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.608 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.608 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.612 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
+20170920 12:01:53.612 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.612 - INFO - +--- START KW: Check Location [ 0 | 0 | O ]
+20170920 12:01:53.616 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.620 - INFO - ${m} = O
+20170920 12:01:53.620 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.620 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.624 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.624 - INFO - +--- END KW: Check Location (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.624 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 0 ]
+20170920 12:01:53.628 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.628 - INFO - +--- START KW: Check Location [ 2 | 0 | X ]
+20170920 12:01:53.632 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.632 - INFO - ${m} = X
+20170920 12:01:53.632 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.632 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.636 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.636 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.636 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
+20170920 12:01:53.640 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.640 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
+20170920 12:01:53.644 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.644 - INFO - ${m} = O
+20170920 12:01:53.644 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.644 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.648 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.648 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.648 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 1 ]
+20170920 12:01:53.652 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.652 - INFO - +--- START KW: Check Location [ 0 | 1 | X ]
+20170920 12:01:53.652 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.656 - INFO - ${m} = X
+20170920 12:01:53.656 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.656 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.660 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.664 - INFO - +--- END KW: Check Location (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.664 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 1 ]
+20170920 12:01:53.664 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.668 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
+20170920 12:01:53.668 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.672 - INFO - ${m} = O
+20170920 12:01:53.672 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.672 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.676 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.676 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.676 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 2 ]
+20170920 12:01:53.680 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.680 - INFO - +--- START KW: Check Location [ 1 | 2 | X ]
+20170920 12:01:53.680 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.680 - INFO - ${m} = X
+20170920 12:01:53.684 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.684 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.684 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.684 - INFO - +--- END KW: Check Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.684 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 0 ]
+20170920 12:01:53.688 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.688 - INFO - +--- START KW: Check Location [ 1 | 0 | O ]
+20170920 12:01:53.688 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.692 - INFO - ${m} = O
+20170920 12:01:53.692 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20170920 12:01:53.692 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.692 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.692 - INFO - +--- END KW: Check Location (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.696 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
+20170920 12:01:53.696 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.696 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
+20170920 12:01:53.700 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20170920 12:01:53.700 - INFO - ${m} = X
+20170920 12:01:53.700 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (0)
+20170920 12:01:53.700 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.704 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20170920 12:01:53.704 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170920 12:01:53.704 - INFO - +--- START KW: Winner Should Be [ TIE ]
+20170920 12:01:53.708 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
+20170920 12:01:53.708 - INFO - ${m} = TIE
+20170920 12:01:53.708 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (0)
+20170920 12:01:53.712 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20170920 12:01:53.712 - INFO - +---- END KW: BuiltIn.Should Be Equal (0)
+20170920 12:01:53.716 - INFO - +--- END KW: Winner Should Be (8)
+------------------------------------------------------------------------------
+20170920 12:01:53.716 - INFO - +-- END TEST: Force a Tie (124)
+------------------------------------------------------------------------------
+20170920 12:01:53.720 - INFO - +- END SUITE: Acceptancetest.TicTacToeTests (340)
+==============================================================================
+20170920 12:01:53.732 - INFO - + END SUITE: Acceptancetest (2538)
 ==============================================================================

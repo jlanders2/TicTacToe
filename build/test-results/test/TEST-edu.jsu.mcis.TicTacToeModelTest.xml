@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.TicTacToeModelTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-09-18T15:32:37" hostname="LAPTOP-6AJ3N0JS" time="0.012">
+<testsuite name="edu.jsu.mcis.TicTacToeModelTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-09-20T17:01:40" hostname="LAPTOP-6AJ3N0JS" time="0.013">
   <properties/>
-  <testcase name="testGameIsWonByXDiagonallyFromTopLeftToBottomRight" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.008"/>
+  <testcase name="testGameIsWonByXDiagonallyFromTopLeftToBottomRight" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.009"/>
   <testcase name="testGameIsOverByTieIfAllLocationsAreFilled" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
   <testcase name="testGameIsWonByOWithFirstCol" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
   <testcase name="testGameIsWonByXHorizontallyAcrossTopRow" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
