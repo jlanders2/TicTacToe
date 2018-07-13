@@ -1,5 +1,3 @@
-package edu.jsu.mcis;
-
 public class TicTacToeModel{
     
     private static final int DEFAULT_WIDTH = 3;
